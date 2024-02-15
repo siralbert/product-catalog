@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RP Flask REST API</title>
+    <title>Product Catalog</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/people.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/notes.css') }}">
@@ -13,14 +13,11 @@
 </head>
 <body>
     <h1>
-        Hello, People!
+        List of available fruits
     </h1>
-    <div class="person-create-card">
-        {% include "_person_create_form.html" %}
-    </div>
-    <div class="people-list">
-        {% for person in people %}
-             {% include "_person_content.html" %}
+    <div class="fruits-list">
+        {% for fruit in fruits %}
+             {% include "_fruit_content.html" %}
         {% endfor %}
     </div>
 

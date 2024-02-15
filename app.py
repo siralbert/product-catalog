@@ -1,7 +1,7 @@
 from flask import render_template
 
 import config, logging
-from models import Person
+from models import Person, Fruit
 
 app = config.connex_app
 app.add_api(config.basedir / "swagger.yml")
@@ -10,7 +10,8 @@ app.add_api(config.basedir / "swagger.yml")
 @app.route("/")
 def home():
     people = Person.query.all()
-    return render_template("home.html", people=people)
+    fruits = Fruit.query.all()
+    return render_template("home.html", people=people, fruits=fruits)
 
 
 if __name__ == "__main__":
