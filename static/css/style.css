@@ -1,5 +1,5 @@
 :root {
-    --bg-color: white;
+    --bg-color: #bfb5af;
     --main-color: coral;
     --secondary-color: lavenderblush;
 }
@@ -10,15 +10,46 @@
 
 body {
     color: var(--main-color);
-    font-size: 1.3em;
+    font-size: .7em;
     font-family: sans-serif;
     display: grid;
     justify-content: center;
 }
 
-h2 {
+/* fruit card */
+.fruit-card {
     margin: 0;
     padding-bottom: 0.3em;
+    color: #1c3041;
+}
+
+img {
+    margin: 1.7em;
+    margin-bottom: 0;
+}
+
+h1 {
+	font-size: 2.4em;
+	line-height: 1em;
+	margin-bottom: .2em;
+	color: #7d2e68;
+}
+
+/* Name of fruit */
+h4 {
+    background: #1c3041;
+    color: #ece2d0;
+    padding: .3em 0.3em;
+    border-radius: 10px;
+    margin-bottom: 0;
+    font-size: 1.4em;
+}
+
+/* Weight of fruit */
+h5 {
+	margin-top: .3em;
+	font-size .5em; 
+	color: #37123c;
 }
 
 hr {

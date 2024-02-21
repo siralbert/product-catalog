@@ -1,10 +1,10 @@
 <div class="fruit-card" data-person-id="{{ fruit.id }}">
     <div class="fruit-content">
-        <h2>
-            <span data-fruit-name="{{ fruit.name }}">{{ fruit.name }}</span>
-            <span data-fruit-weight="{{ fruit.weight }}">{{ fruit.weight }}</span>
-            <span data-fruit-description="{{ fruit.description }}">{{ fruit.description }}</span>
-            <img src="{{ './static/images/' ~ fruit.image_name }}">
-        </h2>
+      <div class="fruit-card">  
+				<h4><span data-fruit-name="{{ fruit.name }}">{{ fruit.name }}</span></h4>
+				<h5><span data-fruit-weight="{{ fruit.weight }}">Weight: {{ fruit.weight }}</span></h5>
+        <span data-fruit-description="{{ fruit.description }}">{{ fruit.description }}</span>
+        <img src="{{ './static/images/' ~ fruit.image_name }}">
+			</div>  
     </div>
 </div>
