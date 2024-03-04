@@ -7,7 +7,7 @@ class Fruit(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(32), nullable=False)
     weight = db.Column(db.Integer)
-    description = db.Column(db.String(32))
+    description = db.Column(db.String())
     image_name = db.Column(db.String(32))
     timestamp = db.Column(
         db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow

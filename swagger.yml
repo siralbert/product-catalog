@@ -96,4 +96,24 @@ paths:
       responses:
         "204":
           description: "Successfully deleted fruit"
+  /upload:
+    post:
+      operationId: "upload.upload"
+      tags:
+        - Fruit
+      summary: "Upload a fruit image"
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                filename:
+                  type: array
+                  items:
+                    type: string
+                    format: binary
+      responses:
+        "201":
+          description: "Successfully uploaded fruit image"
 
